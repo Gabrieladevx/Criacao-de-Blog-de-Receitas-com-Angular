@@ -1,12 +1,20 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'meu-blog';
+  title = 'Blog de Receitas';
+  links = [
+    { title: 'Receitas Doces', route: '/doces' },
+    { title: 'Receitas Salgadas', route: '/salgadas' },
+    { title: 'Dicas de Cozinha', route: '/dicas' },
+    { title: 'Sobre o Blog', route: '/sobre' },
+    { title: 'Contato', route: '/contato' },
+  ];
 }
