@@ -19,7 +19,7 @@ Este projeto é um blog de receitas desenvolvido em Angular. Permite listar e vi
 ## Como rodar o projeto
 
 - Acesse o projeto no navegador pelo link abaixo:
-[http://localhost:4200/](http://localhost:4200/)
+[http://localhost:4200/](https://delightful-torrone-94b4ec.netlify.app/)
 
 ## Scripts úteis
 - `ng build`: Compila o projeto para produção
